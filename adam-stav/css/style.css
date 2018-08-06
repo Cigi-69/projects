@@ -1,0 +1,177 @@
+body {
+
+}
+
+.header,
+.header-overlay {
+	background-size: cover;
+	height: 75vh;
+}
+
+.header {
+	color: #fff;
+	background-image: url('../img/23.jpg');
+	background-position: center center;
+
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.header-overlay {
+	/* position: relative; */
+	background-color: rgba(0, 0, 0, 0.6)
+}
+
+.header a {
+	text-transform: uppercase;
+}
+
+#main-heading {
+	margin-top: 18vh;
+	margin-bottom: 1vh;
+}
+
+h1, h2, h3 {
+	color: #fecf01;
+	font-weight: bolder;
+	text-align: center;
+}
+
+h1 {
+	font-size: 54px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	border-style: solid none;
+	border-width: 5px;
+	border-color: #fff;
+
+
+
+
+	/* border-top: 6px solid dashed #fff; */
+	/* border-bottom: 6px solid dashed #fff; */
+	display: inline-block;
+}
+
+/* h2, h3 {
+	color: 	#222;
+} */
+
+.btn-warning {
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background-color: #ffcf01;
+	margin-top: 30px;
+	padding: 10px 40px;
+}
+
+.header p {
+	/* font-size: 1.08rem; */
+	font-size: 1.4rem;
+	font-weight: 300;
+	/* text-transform: uppercase; */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #ffcf01;
+}
+
+
+#logo {
+	width: 300px;
+}
+
+.sluzby .row:first-of-type {
+	margin-bottom: 80px;
+}
+
+.sluzby .row p {
+	text-align: justify;
+	padding: 0 100px;
+}
+.sluzby {
+	padding-bottom: 	80px;
+}
+
+
+
+hr {
+	margin: 70px auto;
+	border-top: 1px solid #eee;
+	width: 	85%;
+}
+
+h3 {
+	line-height: 3em;
+}
+
+ul li {
+	list-style: none;
+	text-align: center;
+}
+
+.col-lg-7 {
+	padding-left: 15%;
+}
+
+.col-lg-7:nth-of-type(2n) {
+	padding-left: 10%;
+}
+
+.vozovy-park {
+	/* background-color: #eee; */
+	background-color: 	rgba(255, 207, 1, 1);
+	padding-top: 	80px;
+	padding-bottom: 	80px;
+}
+
+.vozovy-park h2 {
+	margin-bottom: 	80px;
+	color: 	#FFF;
+}
+
+.vozovy-park .row {
+	margin-bottom: 	50px;
+}
+
+#gmap_canvas {
+	max-width: 1920px;
+	max-height: 1080px;
+}
+
+.contact div.col-lg-12 {
+	padding: 0;
+}
+
+.map-wrapper{
+    /*for demo purposes*/
+    max-width: 100%;
+
+    /*this one is needed*/
+    position: relative;
+}
+
+#over{
+    background-image: url('	../img/ant-rozetsky-272965-unsplash.jpg');
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    opacity: 0.1;
+
+
+
+    /*extra stuff you need*/
+    height: 800px;
+    top: 0px; bottom: 0px; left: 0px;/*or if you want to go to the edges switch from 16px to 0*/
+}
+
+
+
+
+
+
+
+
+
