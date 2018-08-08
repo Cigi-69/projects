@@ -7,13 +7,17 @@ body {
 }
 
 .nav-link {
-	border-bottom: 2px solid #ffcf01;
+/*	border-bottom: 2px solid #ffcf01;*/
 	padding-bottom: 0;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active>.nav-link {
 	color: #ffcf01;
+    text-decoration: underline;
 }
+
+
 
 .header,
 .header-overlay {
@@ -29,7 +33,7 @@ body {
 }
 
 .header-overlay {
-	background-color: rgba(0, 0, 0, 0.6)
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header a {
@@ -68,13 +72,14 @@ h2, h3 {
 
 h2 {
 	display: inline-block;
-	margin-bottom: 60px;
 	border-bottom: 5px solid #ffcf01;
 }
 
 h3 {
 	font-size: 24px;
-	line-height: 3em;
+	/* line-height: 3em; */
+	line-height: normal;
+	margin-bottom: 30px;
 }
 
 .header p {
@@ -97,47 +102,98 @@ p {
 	margin-top: 30px;
 }
 
-#services {
-	text-align: center;
-	padding: 80px 0;
+div.row .col-lg-4:hover h3{
+	display: inline-block;
+	line-height: normal;
+	border-bottom: 5px solid #ffcf01;
+		margin-bottom: 25px;
 }
 
+div.row .col-lg-4:hover p {
+	font-style: italic;
+	font-weight: bolder;
+}
+
+#services div.row:first-of-type,
+#car-park div.row:first-of-type,
+#contact div.row:first-of-type {
+	margin-bottom: 75px;
+}
+
+#services,
+#car-park,
+#contact {
+	text-align: center;
+	padding: 110px 0;
+}
 
 #car-park {
 	/* background-color: #eee; */
-	background-color: 	#f8b81d;
-	text-align: center;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	/* background-color: 	#f8b81d; */
+	background-color: #222;
 }
 
-div.over {
-	background-color: red;
-	opacity: 0.5;
-}
-
-div.over:hover {
-	opacity: 0.9;
+#car-park p {
+	color: #fff;
 }
 
 #car-park h2 {
-	border-color: #fff;
+	color: #fff;
+	margin-bottom: 30px;
 }
 
 #car-park img {
 	max-width: 100%;
 }
 
-#car-park .col-lg-2 {
+#car-park .col-lg-3 {
 	padding: 0;
 	position: relative;
 }
 
-
-
-.card {
-	margin: 0;
+.img-wrapper{
+    /*for demo purposes*/
+    max-width: 100%;
+    /*this one is needed*/
+    position: relative;
 }
+
+#over{
+    /* background-color: #C6A100; */
+    /* background-color: rgba(0, 0, 0, 0); */
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    /* opacity: 1; */
+   /*extra stuff you need*/
+    height: auto;
+    top: 0px; bottom: 0px; left: 0px;/*or if you want to go to the edges switch from 16px to 0*/
+}
+
+.over-header {
+	display: none;
+}
+#over:hover,
+#over:hover span.over-header {
+	color: white;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bolder;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#over:hover span.over-header {
+	margin-top: 25%;
+	opacity: 1;
+}
+
+
+
+}
+
+
 
 
 
@@ -148,41 +204,27 @@ div.over:hover {
 
 #gmap_canvas {
 	max-width: 1920px;
-	max-height: 1080px;
+	max-height: 580px;
 }
 
 .contact div.col-lg-12 {
 	padding: 0;
 }
 
-.map-wrapper{
-    /*for demo purposes*/
-    max-width: 100%;
 
-    /*this one is needed*/
-    position: relative;
+
+
+
+
+
+
+
+
+
+#footer {
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	height: 350px;
+	padding-top: 80px;
 }
-
-#over{
-    background-image: url('	../img/ant-rozetsky-272965-unsplash.jpg');
-    position: absolute;
-    z-index: 99;
-    width: 100%;
-    top: 0;
-    opacity: 0.1;
-
-
-
-    /*extra stuff you need*/
-    height: 800px;
-    top: 0px; bottom: 0px; left: 0px;/*or if you want to go to the edges switch from 16px to 0*/
-}
-
-
-
-
-
-
-
-
-
