@@ -27,7 +27,7 @@ body {
 
 .header {
 	color: #fff;
-	background-image: url('../img/23.jpg');
+	background-image: url('../img/23.JPG');
 	background-position: center center;
 	text-align: center;
 }
@@ -102,14 +102,14 @@ p {
 	margin-top: 30px;
 }
 
-div.row .col-lg-4:hover h3{
+#services div.row .col-lg-4:hover h3{
 	display: inline-block;
 	line-height: normal;
 	border-bottom: 5px solid #ffcf01;
-		margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
-div.row .col-lg-4:hover p {
+#services div.row .col-lg-4:hover p {
 	font-style: italic;
 	font-weight: bolder;
 }
@@ -124,107 +124,185 @@ div.row .col-lg-4:hover p {
 #car-park,
 #contact {
 	text-align: center;
-	padding: 110px 0;
+	padding-top: 110px;
+	padding-bottom:  110px;
 }
 
-#car-park {
-	/* background-color: #eee; */
-	/* background-color: 	#f8b81d; */
+ div#car-park,
+ div#car-park p,
+ div#car-park h2 {
+ 	color: #fff;
 	background-color: #222;
 }
 
-#car-park p {
-	color: #fff;
-}
-
-#car-park h2 {
-	color: #fff;
-	margin-bottom: 30px;
+div#car-park h2 {
+	margin-bottom: 20px;
 }
 
 #car-park img {
 	max-width: 100%;
 }
 
-#car-park .col-lg-3 {
+div#car-park div.col-lg-3 {
 	padding: 0;
-	position: relative;
 }
 
+div#car-park span em {
+	font-size: 19px;
+	display: block;
+}
+
+
 .img-wrapper{
-    /*for demo purposes*/
     max-width: 100%;
-    /*this one is needed*/
     position: relative;
 }
 
 #over{
-    /* background-color: #C6A100; */
-    /* background-color: rgba(0, 0, 0, 0); */
     position: absolute;
     z-index: 99;
     width: 100%;
     top: 0;
-    /* opacity: 1; */
-   /*extra stuff you need*/
     height: auto;
-    top: 0px; bottom: 0px; left: 0px;/*or if you want to go to the edges switch from 16px to 0*/
+    top: 0px; bottom: 0px; left: 0px;
 }
 
 .over-header {
 	display: none;
 }
-#over:hover,
-#over:hover span.over-header {
-	color: white;
-	display: inline-block;
-	font-size: 24px;
-	font-weight: bolder;
-	opacity: 1;
+
+#over:hover {
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
 #over:hover span.over-header {
+	color: white;
+	font-size: 24px;
+	font-weight: bolder;
+	display: inline-block;
 	margin-top: 25%;
 	opacity: 1;
 }
 
 
-
-}
-
-
-
-
-
-
-
-
-
-
 #gmap_canvas {
 	max-width: 1920px;
-	max-height: 580px;
+	max-height: 50vh;
 }
 
-.contact div.col-lg-12 {
-	padding: 0;
+#contact {
+	position: relative;
 }
 
+form {
+	margin-top: 50px;
+}
 
+.form-control,
+.form-control:focus {
+	font-size: .93rem;
+	text-align: center;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #ccc;
+	box-shadow: none;
+	background-color: #fff;
+}
 
+.form-group {
+	margin-bottom: 0;
+}
 
+#lBtn {
+	font-size: 1.05rem;
+	letter-spacing: 0.8px;
+}
 
+.checkbox label {
+	color: #000;
+	font-weight: bolder;
+	text-decoration: underline;
+	margin-top: 50px;
+}
 
+#personal-info {
+	position: absolute;
+	padding: 40px 60px;
+	top: 70px;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #eee;
+	box-shadow: 10px 10px 15px #bbb;
+	display: none;
+}
 
+#personal-info h2 {
+	margin-bottom: 30px;
+}
 
-
+a:hover #personal-info {
+	display: block;
+}
 
 
 #footer {
-	color: #fff;
+	color: #ddd;
 	background-color: #000;
-	text-align: center;
-	height: 350px;
-	padding-top: 80px;
+	text-align: left;
+	min-height: 350px;
+	padding-top: 40px;
+}
+
+#footer .navbar-brand {
+	padding-bottom: 60px;
+	position: relative;
+	left: -6px;
+}
+
+#footer h3 {
+	border-bottom: 2px solid #111;
+	display: block;
+}
+
+#footer h3,
+#footer .nav a {
+	color: #aaa;
+}
+
+#footer .nav a:hover {
+	color: #b19100;
+	font-style: italic;
+}
+
+#footer ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+#footer .nav a{
+	/* color: ; */
+}
+
+#copyright {
+	display: block;
+	/* margin: 0 auto; */
+	padding: 30px 15px 30px;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+#copyright a {
+	color: #b19100;
+	color: rgba(255, 207, 1, 0.5);
+}
+
+#copyright a:hover {
+	color: #ffcf01;
+}
+
+hr {
+	border-top: 1px solid #111;
+	width: 80%;
+	margin: 50px auto 0;
 }
