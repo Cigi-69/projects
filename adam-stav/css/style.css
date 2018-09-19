@@ -50,7 +50,7 @@ body {
 	font-weight: 300;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-weight: bolder;
 	text-transform: uppercase;
 }
@@ -65,12 +65,12 @@ h1 {
 	display: inline-block;
 }
 
-h2, h3 {
+h2, h3, h4 {
 	color: 	#222;
 	font-family: 'Oswald', sans-serif;
 }
 
-h2 {
+h2, h4 {
 	display: inline-block;
 	border-bottom: 5px solid #ffcf01;
 }
@@ -225,25 +225,19 @@ form {
 	margin-top: 50px;
 }
 
-#personal-info {
-	position: absolute;
-	padding: 40px 60px;
-	top: 70px;
-	left: 0;
-	background-color: #fff;
-	border: 1px solid #eee;
-	box-shadow: 10px 10px 15px #bbb;
-	display: none;
+.modal-header,
+.modal-footer {
+	display: inline-block;
 }
 
-#personal-info h2 {
-	margin-bottom: 30px;
+.modal-header,
+.modal-body {
+	padding: 30px;
 }
 
-a:hover #personal-info {
-	display: block;
+.modal-footer {
+	padding: 0px 0 30px;
 }
-
 
 #footer {
 	color: #ddd;
@@ -285,7 +279,9 @@ a:hover #personal-info {
 }
 
 #copyright {
-	display: block;
+	/* display: block; */
+	display: flex;
+	justify-content: center;
 	/* margin: 0 auto; */
 	padding: 30px 15px 30px;
 	font-style: italic;
@@ -305,4 +301,18 @@ hr {
 	border-top: 1px solid #111;
 	width: 80%;
 	margin: 50px auto 0;
+}
+
+.error,
+.success {
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+.error {
+	color: #f6545a;
+}
+
+.success {
+	color: #178f3d;
 }

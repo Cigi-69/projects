@@ -216,7 +216,7 @@
 				        <div class="checkbox">
 				        	<label>
 				            	<input type="checkbox" name="chBox">
-				            	<a href="3">Súhlas so spracovaním osobných údajov *</a>
+				            	<a href="" id="modalLink" data-toggle="modal" data-target="#modalWindow">Súhlas so spracovaním osobných údajov *</a>
 				          	</label>
 				          	<div class="error"><?= $chBox_error ?></div>
 				          	<div class="success"><?= $success ?></div>
@@ -227,27 +227,33 @@
 				<!-- CONTACT FORM END-->
 				</div>
 			</div>
-			<div id="personal-info" class="offset-lg-1 col-lg-10">
-	        	<h2>SÚHLAS SO SPRACÚVANÍM OSOBNÝCH ÚDAJOV</h2>
-	        	<p>
-		        	Spicy jalapeno bacon ipsum dolor amet duis officia doner kevin qui. Incididunt nisi in jowl. Ribeye turducken ex ham hock. Kevin fugiat commodo tri-tip tempor, pork loin labore cow et jerky.
-	        	</p>
-	        	<p>
-	        		Fatback minim pastrami rump, capicola bacon veniam tri-tip doner porchetta short loin pork loin dolore sunt. Nostrud mollit pariatur flank dolore, ham laboris. Chuck tenderloin alcatra, duis mollit jowl enim ad deserunt kielbasa sint veniam nulla rump cupim. Et aliqua ut chicken pork loin. Dolore pariatur laboris doner. Aliquip turducken strip steak, ham hock cupidatat ut hamburger venison beef ribs tri-tip.
-	        	</p>
-	        	<p>
-	        		Picanha exercitation tri-tip turducken enim. Corned beef porchetta aliqua ea biltong ex. Non dolor landjaeger laboris ut excepteur short loin exercitation venison est chuck reprehenderit cow tri-tip. Deserunt consectetur ut, cupim meatloaf dolore strip steak. Drumstick commodo nulla short loin turducken chicken ground round shankle. Strip steak tri-tip qui leberkas. Tri-tip velit duis mollit venison aute veniam jerky, spare ribs beef pork chop swine dolore.
-	        	</p>
-	        	<p>
-	        		Strip steak hamburger ipsum cupim eu. In pariatur spare ribs, veniam tri-tip fugiat officia tempor prosciutto flank commodo t-bone ribeye jerky incididunt. Aliqua ea pork belly laborum. Landjaeger pig porchetta dolor nulla fatback mollit voluptate ribeye labore minim corned beef.
-	        	</p>
-	        	<p>
-	        		Porchetta rump ground round culpa pork belly buffalo picanha exercitation irure proident bresaola ipsum. In proident chuck non ribeye quis. Tail occaecat labore exercitation drumstick ullamco, venison rump ex pancetta ipsum enim. Landjaeger strip steak andouille occaecat pariatur. Do tri-tip shoulder esse est salami, leberkas sint. In cupidatat andouille excepteur ham anim rump jowl turkey pig aliquip buffalo sint shoulder. Fugiat turkey flank consectetur aute labore jowl.
-	        	</p>
-	        	<p>
-	        		Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
-	        	</p>
-	        </div>
+			<div id="personalinfo" class="offset-lg-1 col-lg-10">
+				<!-- Button trigger modal -->
+				<!-- Modal -->
+				<div class="modal fade" id="modalWindow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h4 class="modal-title" id="modalWindowTitle">Súhlas so spracovaním osobných údajov</h4>
+				      </div>
+				      <div class="modal-body">
+				        <p>
+				        	Spicy jalapeno bacon ipsum dolor amet duis officia doner kevin qui. Incididunt nisi in jowl. Ribeye turducken ex ham hock. Kevin fugiat commodo tri-tip tempor, pork loin labore cow et jerky.
+			        	</p>
+			        	<p>
+			        		Fatback minim pastrami rump, capicola bacon veniam tri-tip doner porchetta short loin pork loin dolore sunt. Nostrud mollit pariatur flank dolore, ham laboris. Chuck tenderloin alcatra, duis mollit jowl enim ad deserunt kielbasa sint veniam nulla rump cupim. Et aliqua ut chicken pork loin. Dolore pariatur laboris doner. Aliquip turducken strip steak, ham hock cupidatat ut hamburger venison beef ribs tri-tip.
+			        	</p>
+			        	<p>
+			        		Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
+			        	</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
 		</div>
 <!-- CONTACT END -->
 <!-- FOOTER START -->
@@ -260,20 +266,6 @@
 			<div class="row">
 				<div class="offset-lg-2 col-lg-2">
 					<h3>Navigácia</h3>
-<!-- 				    <ul class="navbar-nav">
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Úvod <span class="sr-only">(current)</span></a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#services">Zabezpečujeme</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#car-park">Vozový park</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#contact">Kontakt</a>
-				      </li>
-				    </ul> -->
 					<ul class="nav flex-column">
 					  <li class="nav-item">
 					    <a href="#top">Úvod</a>
@@ -294,7 +286,7 @@
 					<ul class="nav flex-column">
 						<li>Adam-stav Zbehy s.r.o.</li>
 						<li>Zbehy 783 - 95142 Zbehy</li>
-						<li><a href="mailto:adamstavzbehy783&@gmail.com">adamstavzbehy783&@gmail.com</a></li>
+						<li><a href="mailto:adamstavzbehy783@gmail.com">adamstavzbehy783@gmail.com</a></li>
 						<li><a href="tel:091x-xxx-xxx">091x-xxx-xxx</a></li>
 						<li><a href="tel:091x-xxx-xxx">091x-xxx-xxx</a></li>
 					</ul>
@@ -311,7 +303,7 @@
 			</div>
 			<hr>
 			<div class="row">
-				<div class="offset-lg-5 col-lg-2">
+				<div class="col-12">
 					<small id="copyright"><a href="#">Copyright &copy; 2018 &#8226; Michal Cigáň</a></small>
 				</div>
 			</div>
