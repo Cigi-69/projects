@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: #222;
 }
@@ -16,8 +20,6 @@ body {
 	color: #ffcf01;
     text-decoration: underline;
 }
-
-
 
 .header,
 .header-overlay {
@@ -124,7 +126,7 @@ p {
 #car-park,
 #contact {
 	text-align: center;
-	padding-top: 110px;
+	padding-top: 75px;
 	padding-bottom:  110px;
 }
 
@@ -151,7 +153,6 @@ div#car-park span em {
 	font-size: 19px;
 	display: block;
 }
-
 
 .img-wrapper{
     max-width: 100%;
@@ -183,7 +184,6 @@ div#car-park span em {
 	margin-top: 25%;
 	opacity: 1;
 }
-
 
 #gmap_canvas {
 	max-width: 1920px;
