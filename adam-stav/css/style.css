@@ -29,13 +29,14 @@ body {
 
 .header {
 	color: #fff;
-	background-image: url('../img/23.JPG');
-	background-position: center center;
+	background-image: url('../img/cover.jpg');
+	/* Photo by Luke Besley on Unsplash */
+	background-position: bottom center;
 	text-align: center;
 }
 
 .header-overlay {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.65);
 }
 
 .header a {
