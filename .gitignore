@@ -1,1 +1,10 @@
 adam-stav/form_process.php
+**/node_modules/
+**/android/
+**/ios/
+**/*.json
+**/*.babelrc
+**/*.buckconfig
+**/*.flowconfig
+**/*.gitattributes
+**/*.watchmanconfig
