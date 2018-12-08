@@ -1,0 +1,15 @@
+h1 {
+    font-weight: bolder;
+    text-align: center;
+    padding: 30px;
+}
+
+#total-balance {
+    text-align-last: right;
+
+}
+
+tr:hover td {
+    background-color: gray!important;
+    color: #fff!important;
+}
