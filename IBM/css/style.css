@@ -6,10 +6,16 @@ h1 {
 
 #total-balance {
     text-align-last: right;
-
 }
+
+#filters {
+    display: inline-block;
+    padding-right: 50px;
+}
+
 
 tr:hover td {
     background-color: gray!important;
     color: #fff!important;
 }
+

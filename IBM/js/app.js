@@ -1,15 +1,20 @@
 const tabRecord = document.querySelector('#record')
 const tabBody = document.querySelector('#tab-body')
 const totalBal = document.querySelector('#sum')
+const filters = document.querySelectorAll('.custom-control-input')
 
 let totalBalance = 0
-getInfo().then((data) => {
-    data.forEach((record) => {
-        const parameters = [++record.index, record.name, record.company, record.gender, record.email, record.phone, record.address, record.isActive, record.balance, makeDiscount(record.isActive, record.balance)]
 
-        totalBalance += parseInt((record.balance).replace(/,/, ''))
-        makeTable(parameters, record)
-    });
+const customers = getCustomers()
+renderTable(customers, 'all')
 
-    totalBal.innerText = (totalBalance.toLocaleString('en-IN'))
-})
+filters.forEach(filter => {
+    document.querySelector(`#${filter.id}`).addEventListener('change', (e) => {
+        renderTable(customers, e.target.value)
+    })
+});
+
+
+
+
+

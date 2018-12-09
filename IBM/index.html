@@ -12,8 +12,34 @@
 </head>
     <header>
         <div class="container-fluid">
-            <h1>Customers data</h1>
-            <h3 id="total-balance">Total Balance: <span id="sum">0</span></h3>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Customers data</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h3 id="filters">Filters:</h3>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="filter1" name="filters" class="custom-control-input" value="all" checked>
+                        <label class="custom-control-label" for="filter1">All Customers</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="filter2" name="filters" class="custom-control-input" value="nonActive">
+                        <label class="custom-control-label" for="filter2">None Active</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="filter3" name="filters" class="custom-control-input" value="negative">
+                        <label class="custom-control-label" for="filter3">Negative Balance</label>
+                    </div>
+                </div>
+                <div class="offset-4 col-2">
+                    <h3 id="total-balance">Total Balance: <span id="sum">0</span></h3>
+                </div>
+            </div>
+
+
+
         </div>
     </header>
     <div class="container-fluid">
