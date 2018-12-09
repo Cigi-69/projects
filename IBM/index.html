@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hangman</title>
+    <title>NailedIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -14,7 +13,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h1>Customers data</h1>
+                    <h1>NailedIT - Customers data</h1>
                 </div>
             </div>
             <div class="row">
@@ -25,8 +24,8 @@
                         <label class="custom-control-label" for="filter1">All Customers</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="filter2" name="filters" class="custom-control-input" value="nonActive">
-                        <label class="custom-control-label" for="filter2">None Active</label>
+                        <input type="radio" id="filter2" name="filters" class="custom-control-input" value="inactive">
+                        <label class="custom-control-label" for="filter2">Inactive</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="filter3" name="filters" class="custom-control-input" value="negative">
@@ -37,48 +36,28 @@
                     <h3 id="total-balance">Total Balance: <span id="sum">0</span></h3>
                 </div>
             </div>
-
-
-
         </div>
     </header>
     <div class="container-fluid">
-        <table class="table table-sm table-hover table-bordered table-fixed">
+        <table class="table table-sm table-hover table-bordered">
             <thead>
-                <tr class="thead-dark fixed">
-                    <th scope="col" id="record">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Compoany</th>
-                    <th scope="col">Gender</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Active</th>
-                    <th scope="col">Balance</th>
-                    <th scope="col">Discount</th>
+                <tr class="thead-dark">
+                    <th class="sticky-top" scope="col" id="record">#</th>
+                    <th class="sticky-top" scope="col">Name</th>
+                    <th class="sticky-top" scope="col">Company</th>
+                    <th class="sticky-top" scope="col">Gender</th>
+                    <th class="sticky-top" scope="col">Email</th>
+                    <th class="sticky-top" scope="col">Contact</th>
+                    <th class="sticky-top" scope="col">Address</th>
+                    <th class="sticky-top" scope="col">Active</th>
+                    <th class="sticky-top" scope="col">Balance</th>
+                    <th class="sticky-top" scope="col">Discount - 10%</th>
                 </tr>
             </thead>
             <tbody id="tab-body">
             </tbody>
         </table>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -90,5 +69,4 @@
     <script src="./js/functions.js"></script>
     <script src="./js/app.js"></script>
 </body>
-
 </html>

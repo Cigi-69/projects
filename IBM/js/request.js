@@ -1,4 +1,4 @@
-// Promise
+// request for getting the data
 const getInfo = async() => {
     const response = await fetch('https://api.myjson.com/bins/1eyqeh')
     if (response.status === 200) {

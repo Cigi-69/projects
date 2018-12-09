@@ -2,7 +2,6 @@ const tabRecord = document.querySelector('#record')
 const tabBody = document.querySelector('#tab-body')
 const totalBal = document.querySelector('#sum')
 const filters = document.querySelectorAll('.custom-control-input')
-
 let totalBalance = 0
 
 const customers = getCustomers()
@@ -13,8 +12,3 @@ filters.forEach(filter => {
         renderTable(customers, e.target.value)
     })
 });
-
-
-
-
-
