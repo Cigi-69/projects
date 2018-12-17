@@ -3,9 +3,15 @@ const tabBody = document.querySelector('#tab-body')
 const totalBal = document.querySelector('#sum')
 const filters = document.querySelectorAll('.custom-control-input')
 let totalBalance = 0
+let customers = ''
 
-const customers = getCustomers()
-renderTable(customers, 'all')
+getInfo().then((data) => {
+    customers = data
+    renderTable(data, 'all')
+}).catch((err) => {
+    console.log(err)
+})
+
 
 filters.forEach(filter => {
     document.querySelector(`#${filter.id}`).addEventListener('change', (e) => {

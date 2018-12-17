@@ -1,10 +1,3 @@
-// helping functions for getting the data
-const getCustomers = () => {
-    console.log(getInfo());
-
-     return getInfo()
-}
-
 // clearing the rows of the table
 const clearTable = () => {
     totalBalance = 0
@@ -37,13 +30,11 @@ const createLink = (data, customer, discount) => {
 // rednering the table based on the filtered data
 const renderTable = (customers, filter) => {
     clearTable()
-    customers.then((data) => {
-        data.forEach((record, index) => {
-            const discount = makeDiscount(record.isActive, record.balance)
-            const parameters = [++index, record.name, record.company, record.gender, createLink(record.email, record.name, discount), createLink(record.phone), record.address, record.isActive, record.balance, discount]
-            filteredData(filter, parameters, record)
-        });
-    })
+    customers.forEach((record, index) => {
+        const discount = makeDiscount(record.isActive, record.balance)
+        const parameters = [++index, record.name, record.company, record.gender, createLink(record.email, record.name, discount), createLink(record.phone), record.address, record.isActive, record.balance, discount]
+        filteredData(filter, parameters, record)
+    });
 }
 
 // helping function for creating elements based on the parameters
