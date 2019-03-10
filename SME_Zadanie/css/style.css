@@ -1,0 +1,496 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+/*all content*/
+.container {
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.container,
+.sum-container,
+.popis-container {
+  max-width: 90vw;
+  margin: 0 auto;
+  }
+
+.bold {
+  font-weight: 700;
+}
+
+h1 {
+  color: #313131;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #717171;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 10px;
+  color: #7a7a7a;
+}
+
+img {
+  color: #717171;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  max-width: 109px;
+  text-align: center;
+  line-height: 1rem;
+}
+
+/*******************************  PROGRESS BAR - CELKOVO  *******************************/
+.pbar-container {
+  margin: 15px auto;
+  max-width: 150px;
+  text-align: center;
+}
+
+.progress {
+  height: 3px;
+  border-radius: 30px;
+  background: #e0e0e0;
+}
+
+.progress-bar {
+  height: 3px;
+  border-radius: 30px;
+  transition: linear;
+  transition-property: width;
+}
+
+.progress-moved .progress-bar {
+  width: 45%;
+  background-color: #40c18a;
+  animation: progressAnimation 3s;
+}
+
+@keyframes progressAnimation {
+  0% { width: 0%;}
+  100% { width: 45%;}
+}
+/*******************************  PROGRESS BAR - CELKOVO  *******************************/
+
+/*******************************  PROGRESS BAR - VYSLEDKY  *******************************/
+
+.sum-container{
+  position: relative;
+  text-align: center;
+}
+
+.sum-progress {
+  height: 35px;
+  background: #e0e0e0;
+}
+
+.sum-progress-bar,
+.sum-progress-bar2 {
+  height: 35px;
+  transition: linear;
+  transition-property: width;
+  position: relative;
+}
+
+.sum-container::after {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 1px;
+  height: 35px;
+  z-index: 500;
+}
+
+.sum-progress-bar2 {
+  top: -35px;
+}
+
+.sum-progress-moved .sum-progress-bar {
+  width: 45.5%;
+  background-color: #555555;
+  animation: sum-progressAnimation 3s;
+}
+
+.sum-progress-moved .sum-progress-bar2 {
+  width: 54.5%;
+  background-color: #40c18a;
+  animation: sum-progressAnimation2 3s;
+  display: block;
+  float: right;
+}
+
+@keyframes sum-progressAnimation {
+  0% { width: 0%;}
+  100% { width: 45.5%;}
+}
+
+@keyframes sum-progressAnimation2 {
+  0% { width: 0%;}
+  100% { width: 54.5%;}
+}
+/*******************************  PROGRESS BAR - VYSLEDKY  *******************************/
+
+.kandidat {
+  color: #313131;
+  font-size: 14px;;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.strany {
+  color: #7a7a7a;
+  font-size: 7px;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+
+.strany span:first-of-type {
+  left: 0px;
+}
+
+.strany span:last-of-type {
+  right: 0px;
+}
+
+.align-left {
+	float: left;
+}
+.align-right {
+	float: right;
+}
+
+.left, .right {
+  position: absolute;
+}
+
+.left {
+  left: 42px;
+}
+
+.right {
+  right: 42px;
+}
+
+.in-progress-bar {
+  color: #fff;
+  z-index: 5;
+  font-size: 7px;
+  font-weight: 400;
+  margin-top: 7px;
+  line-height: 0.8rem;
+}
+
+.percent-hlasov {
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+}
+
+.left span.percent-hlasov {
+  text-align: left;
+}
+
+.right span.percent-hlasov {
+  text-align: right;
+}
+
+.thumbnail {
+  border-radius: 100%;
+  height: 120%;
+}
+
+.sefcovic,
+.caputova {
+  top: -5px;
+  background-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.sefcovic {
+  left: -9px;
+  border-color:  #ffffff;
+}
+
+.caputova {
+  right: -9px;
+  border-color: #40c18a;
+}
+
+#check {
+  font-size: 50px;
+  font-weight: 800;
+  color: red;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #40c18a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.checkmark {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: 2px;
+}
+
+.checkmark::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(47deg);
+}
+
+/*******************************  MEDIA QUERIES  *******************************/
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : landscape) {
+
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    h2 {
+      font-size: 0.5rem;
+    }
+
+    p {
+      font-size: 0.38rem;
+    }
+
+  }
+
+@media only screen
+  and (min-device-width : 569px)
+  and (max-device-width : 950px)
+  and (orientation : landscape) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.6rem;
+    }
+
+    .container,
+    .sum-container,
+    .popis-container {
+      max-width: 70vw;
+      margin: 0 auto;
+    }
+
+    .sum-progress,
+    .sum-progress-bar,
+    .sum-progress-bar2,
+    .sum-container::after {
+      height: 55px;
+    }
+
+    .sum-progress-bar2 {
+      top: -55px;
+    }
+
+    .kandidat {
+      font-size: 18px;
+    }
+
+    .strany {
+      font-size: 11px;
+      margin-bottom: 15px;;
+    }
+
+    .thumbnail {
+      height: 150%;
+    }
+
+    .sefcovic,
+    .caputova {
+      top: -15px;
+      border-width: 3px;
+    }
+    .sefcovic {
+      left: -55px;
+    }
+
+    .caputova {
+      right: -55px;
+    }
+
+    .percent-hlasov {
+      font-size: 20px;
+      line-height: 1.7rem;
+    }
+
+    .in-progress-bar {
+      font-size: 11px;
+      margin-top: 6px;
+    }
+
+    .dot {
+      height: 30px;
+      width: 30px;
+      top: -15px;
+      right: -53px;
+    }
+
+    .checkmark {
+      display: inline-block;
+      position: relative;
+      top: -9px;
+      left: 3px;
+    }
+
+    .checkmark::after {
+      width: 8px;
+      height: 16px;
+      border-width: 0 4px 4px 0;
+     }
+
+  }
+
+@media only screen
+  and (min-device-width : 951px) {
+
+    h1 {
+      font-size: 32px;
+      margin-top: 35px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+
+    .pbar-container {
+      margin: 15px auto;
+      max-width: 245px;
+    }
+
+    .container,
+    .sum-container {
+      max-width: 900px;
+    }
+
+    .popis-container {
+      max-width: 760px;
+    }
+
+    .strany span:first-of-type {
+      left: 70px;
+    }
+
+    .strany span:last-of-type {
+      right: 70px;
+    }
+
+    .sum-progress,
+    .sum-progress-bar,
+    .sum-progress-bar2,
+    .sum-container::after {
+      height: 70px;
+    }
+
+    .sum-progress-bar2 {
+      top: -70px;
+    }
+
+    .kandidat {
+      font-size: 20px;
+    }
+
+    .strany {
+      font-size: 11px;
+    }
+
+    .left {
+      left:70px;
+    }
+
+    .right {
+      right: 70px;
+    }
+    .thumbnail {
+      height: 150%;
+    }
+
+    .sefcovic,
+    .caputova {
+      top: -15px;
+      border-width: 3px;
+    }
+    .sefcovic {
+      left: -65px;
+    }
+
+    .caputova {
+      right: -65px;
+    }
+
+    .percent-hlasov {
+      font-size: 26px;
+    }
+
+    .in-progress-bar {
+      font-size: 11px;
+      margin-top: 16px;
+      line-height: 1.4rem;
+    }
+
+    .dot {
+      height: 30px;
+      width: 30px;
+      top: -20px;
+      right: -53px;
+    }
+
+    .checkmark {
+      display: inline-block;
+      position: relative;
+      top: -11px;
+      left: 4px;
+    }
+
+    .checkmark::after {
+      width: 8px;
+      height: 16px;
+      border-width: 0 5px 5px 0;
+     }
+}
+
+/*******************************  MEDIA QUERIES  *******************************/

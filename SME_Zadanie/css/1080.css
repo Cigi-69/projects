@@ -1,0 +1,247 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/*all content*/
+.container {
+    text-align: center;
+    max-width: 1080px;
+    padding: 45px 10px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+h1 {
+    color: #313131;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #717171; /* mb 11.62 */
+    margin-bottom: 15px;;
+}
+
+p {
+    font-size: 11px;
+    color: #7a7a7a;
+}
+
+/*******************************  PROGRESS BAR - CELKOVO  *******************************/
+.pbar-container {
+  margin: 15px auto;
+  max-width: 245px;
+  text-align: center;
+}
+
+.progress {
+  height: 4px;
+  border-radius: 30px;
+  background: #e0e0e0;
+}
+
+.progress-bar {
+  height: 4px;
+  border-radius: 30px;
+  transition: linear;
+  transition-property: width;
+}
+
+.progress-moved .progress-bar {
+  width: 45%;
+  background-color: #40c18a;
+  animation: progressAnimation 3s;
+}
+
+@keyframes progressAnimation {
+  0% { width: 0%;}
+  100% { width: 45%;}
+}
+/*******************************  PROGRESS BAR - CELKOVO  *******************************/
+
+/*******************************  PROGRESS BAR - VYSLEDKY  *******************************/
+.sum-container{
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.sum-progress {
+  height: 70px;
+  background: #e0e0e0;
+}
+
+.sum-progress-bar,
+.sum-progress-bar2 {
+  height: 70px;
+  transition: linear;
+  transition-property: width;
+}
+
+.sum-progress-bar::after {
+    content: "";
+    background-color: #e0e0e0;
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 70px;
+    z-index: 500;
+}
+
+.sum-progress-bar2 {
+  position: relative;
+  top: -70px;
+}
+
+.sum-progress-moved .sum-progress-bar {
+  width: 45.5%;
+  background-color: #555555;
+  animation: sum-progressAnimation 3s;
+}
+
+.sum-progress-moved .sum-progress-bar2 {
+  width: 54.5%;
+  background-color: #40c18a;
+  animation: sum-progressAnimation2 3s;
+  display: block;
+  float: right;
+}
+
+@keyframes sum-progressAnimation {
+  0% { width: 0%;}
+  100% { width: 45.5%;}
+}
+
+@keyframes sum-progressAnimation2 {
+  0% { width: 0%;}
+  100% { width: 54.5%;}
+}
+/*******************************  PROGRESS BAR - VYSLEDKY  *******************************/
+
+
+.popis-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.kandidat {
+    color: #313131;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.strany {
+    color: #7a7a7a;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.align-left {
+	float: left;
+}
+.align-right {
+	float: right;
+}
+
+.left {
+    position: absolute;
+    left: 75px;
+}
+
+.right {
+    position: absolute;
+    right: 75px;
+}
+
+.in-progress-bar {
+    color: #fff;
+    z-index: 5;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 1.40rem;
+}
+
+.percent-hlasov {
+    font-size: 26px;
+    font-weight: 700;
+    display: block;
+}
+
+.left span.percent-hlasov {
+    text-align: left;
+}
+
+.right span.percent-hlasov {
+    text-align: right;
+}
+
+.thumbnail {
+    border-radius: 100%;
+}
+
+.sefcovic {
+    border: 2px solid #ffffff;
+    background-color: #fff;
+    top: 10px;
+    left: -55px;
+}
+
+.caputova {
+    border: 3px solid #40c18a;
+    background-color: #fff;
+    top: -25px;
+    right: -65px;
+}
+
+
+
+#fero {
+    height: 50000px;
+}
+#check {
+    font-size: 50px;
+    font-weight: 800;
+    color: red;
+
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  background-color: #40c18a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  right: -58px;;
+}.perc
+
+.checkmark {
+  display: inline-block;
+  position: relative;
+  top: -11px;
+  left: 4px;
+}
+
+.checkmark::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 16px;
+  border: solid #fff;
+  border-width: 0 5px 5px 0;
+  transform: rotate(47deg);
+}

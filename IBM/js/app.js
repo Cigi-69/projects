@@ -12,7 +12,6 @@ getInfo().then((data) => {
     console.log(err)
 })
 
-
 filters.forEach(filter => {
     document.querySelector(`#${filter.id}`).addEventListener('change', (e) => {
         renderTable(customers, e.target.value)
